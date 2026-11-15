@@ -1,7 +1,7 @@
 
 // Butona tıklandığında çalışacak fonksiyon
 function showMessage() {
-    alert("Tebrikler! JavaScript başarıyla çalışıyor! 🎉");
+    alert("Şeytan çağrıldı ama kutsal suyu görünce kaçtı! 🚿😈");
 }
 
 // Sayaç başlangıç değeri
