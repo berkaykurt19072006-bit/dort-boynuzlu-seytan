@@ -1,0 +1,135 @@
+
+/* Sayfanın genel tasarımı */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    text-align: center;
+}
+
+/* Ana başlık */
+h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+/* Paragraflar */
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #dbeafe;
+}
+
+/* Buton tasarımı */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Fare butonun üzerine geldiğinde */
+button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/* Açık tema tasarımı */
+body.light-theme {
+    background: linear-gradient(135deg, #f8fafc, #dbeafe);
+    color: #0f172a;
+}
+
+/* Açık temada başlıklar */
+body.light-theme h1,
+body.light-theme h2 {
+    color: #0f172a;
+}
+
+/* Açık temada paragraflar */
+body.light-theme p {
+    color: #334155;
+}
+
+
+/* İletişim formu tasarımı */
+form {
+    width: 100%;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px;
+    margin: 12px auto;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+form label {
+    text-align: left;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #94a3b8;
+    border-radius: 8px;
+    font: inherit;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Açık temada form */
+body.light-theme form {
+    background: rgba(255, 255, 255, 0.85);
+    border-color: #cbd5e1;
+}
+
+/* Telefon ve küçük ekran uyumluluğu */
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    form {
+        padding: 18px;
+    }
+}

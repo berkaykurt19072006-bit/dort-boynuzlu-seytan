@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlk Web Sitem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<h2>Şu Anki Saat</h2>
+
+<p id="clock">Saat yükleniyor...</p>
+<button onclick="toggleTheme()">Temayı Değiştir</button>
+
+<h2>Benimle İletişime Geç</h2>
+
+<form id="contactForm" onsubmit="sendMessage(event)">
+
+    <label for="name">Adınız:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">E-posta adresiniz:</label>
+    <input type="email" id="email" required>
+
+    <label for="message">Mesajınız:</label>
+    <textarea id="message" required></textarea>
+
+    <button type="submit">Mesajı Gönder</button>
+
+</form>
+
+<script src="script.js"></script>
+<body>
+
+    <h1>Merhaba Dünya!</h1>
+
+    <p>Bu benim geliştirdiğim ilk web sitesi.</p>
+
+    <p>Yazılım öğrenmeye bugün başladım!</p>
+    <button onclick="showMessage()">Bana Tıkla!</button>
+    <h2>Benim Sayacım</h2>
+
+<p>Sayaç: <span id="count">0</span></p>
+
+<button onclick="increaseCounter()">Sayacı Artır</button>
+<button onclick="resetCounter()">Sayacı Sıfırla</button>
+
+</body>
+</html>
